@@ -27,14 +27,11 @@ SELECT product_id, product_name FROM Products WHERE unit_price > 100;
 5. Calculate the average unit_price of products in the Products table.
 SELECT AVG(unit_price) AS average_unit_price FROM Products;
 
-6. Retrieve product_name and unit_price from the Products table with the Highest Unit Price
-SELECT product_name, unit_price FROM Products WHERE unit_price = (SELECT MAX(unit_price) FROM Products);
-
-7. Retrieve the product_name and unit_price from the Products table, ordering the results byunit_price in descending order.
+6. Retrieve the product_name and unit_price from the Products table, ordering the results byunit_price in descending order.
 SELECT product_name, unit_price FROM Products ORDER BY unit_price DESC;
 
-8. Retrieve the product_name and unit_price from the Products table, filtering the unit_price toshow only values between $20 and $600.
+7. Retrieve the product_name and unit_price from the Products table, filtering the unit_price toshow only values between $20 and $600.
 SELECT product_name, unit_price FROM Products WHERE unit_price BETWEEN 20 AND 600;
 
-9. Retrieve the product_name and category from the Products table, ordering the results bycategory in ascending order.
+8. Retrieve the product_name and category from the Products table, ordering the results bycategory in ascending order.
 SELECT product_name, category FROM Products ORDER BY category ASC;
